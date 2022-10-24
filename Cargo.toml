@@ -1,0 +1,7 @@
+[workspace]
+
+members = [
+    "arm_cross_compile",
+	"mini-redis",
+]
+
