@@ -102,7 +102,7 @@ impl Frame {
         }
     }
 
-    /// The message has already been validated with `check`.
+    /// Para invocar este metodo, previamente se tiene que haber validado con `check`.
     pub fn parse(src: &mut Cursor<&[u8]>) -> Result<Frame, Error> {
         match get_u8(src)? {
             b'+' => {
