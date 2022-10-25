@@ -28,7 +28,7 @@ impl TcpServer {
 
     }
 
-    async fn process(&mut self, socket: TcpStream) {
+    async fn process(&mut self, _socket: TcpStream) {
         while let Some(line_result) = self.qr_reader.read_line().await {
             let line = line_result.expect("Failed to read line");
             println!("{}", line);

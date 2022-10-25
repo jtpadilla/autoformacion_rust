@@ -6,9 +6,9 @@ async fn main() -> tokio_serial::Result<()> {
 
     env_logger::init();
 
-    let mut reader = QrReader::new()?;
+    let mut _reader = QrReader::new()?;
 
-    let tcp_server = TcpServer::new(reader);
+    let _tcp_server = TcpServer::new(_reader);
 
     Ok(())
 

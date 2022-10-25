@@ -38,5 +38,4 @@ fn main() {
 
     foo::run();
     
-    
 }
